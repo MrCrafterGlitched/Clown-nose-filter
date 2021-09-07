@@ -1,0 +1,35 @@
+h3{
+font-size: 25px!important;    
+}
+.btn-success:hover{
+   animation: Color_changer 1s infinite;
+}
+@keyframes Color_changer{
+    0%{
+        background-color: crimson;
+    }
+    25%{
+        background-color: darkgoldenrod;
+    }
+    50%{
+        background-color:darkorange;
+    }
+    75%{
+        background-color: darksalmon;
+    }
+    100%{
+        background-color: deepskyblue;
+    }
+}
+canvas{
+    border: 2px darkslategrey dashed;
+    animation:BOX 2s 1s infinite;
+}
+@keyframes BOX{
+    from{
+        box-shadow: 1px 1px 1px 30px gold;
+    }
+    to{
+        box-shadow: 1px 1px 30px brown;
+    }
+}
