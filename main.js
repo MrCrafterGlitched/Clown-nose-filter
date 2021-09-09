@@ -1,7 +1,7 @@
 nose_x=""
 nose_y=""
 function preload() {
-    
+    img=loadImage("https://i.postimg.cc/fbDrXBpv/POAH.png")
 }
 function setup() {
     canvas=createCanvas(300,300)
@@ -14,6 +14,10 @@ function setup() {
 }
 function draw() {
     image(video,0,0,300,300)
+    fill("red")
+    stroke("black")
+    //circle(nose_x,nose_y,30)
+    image(img,nose_x-15,nose_y-15,30,30)
 }
 function TakeSnapshot() {
     save("Filter-ed.png")
